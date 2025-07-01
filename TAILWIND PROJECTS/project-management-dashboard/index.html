@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Project Management dashboard </title>
+</head>
+<body class="bg-gray-900 text-gray-100 p-8">
+    <section class="bg-gray-800 p-6 rounded-xl shadow-lg max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">Project Management Dashboard</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-gray-700 p-4 rounded-lg">
+            <p class="text-sm">Total Projects</p>
+            <p class="text-xl font-bold">18</p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded-lg">
+            <p class="text-sm">Tasks Overdue</p>
+            <p class="text-xl font-bold">2</p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded-lg">
+            <p class="text-sm">In Progress</p>
+            <p class="text-xl font-bold">8</p>
+        </div>
+        <div class="bg-gray-700 p-4 rounded-lg">
+            <p class="text-sm">Completed</p>
+            <p class="text-xl font-bold">10</p>
+        </div>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 mt-6">Task Overview</h3>
+        <div class="mb-4">
+            <p class="text-sm mb-1">Completed Tasks</p>
+            <div class="w-full rounded-full bg-gray-600 h-3">
+                <div class="h-3 rounded-full w-3/4 bg-green-400"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-sm mb-1">In Progress</p>
+            <div class="w-full rounded-full bg-gray-600 h-3">
+                <div class="h-3 rounded-full w-1/2 bg-blue-400"></div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="text-sm mb-1">To Do</p>
+            <div class="w-full rounded-full bg-gray-600 h-3">
+                <div class="h-3 rounded-full w-1/4 bg-yellow-400"></div>
+            </div>
+        </div>
+        <h3 class="font-semibold text-xl mb-2 mt-6">Upcoming Deadlines</h3>
+        <table class="w-full text-left">
+            <thead>
+                <tr class="border-b border-gray-700">
+                    <th class="py-2">Projects</th>
+                    <th class="py-2">Due Date</th>
+                    <th class="py-2">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2">Website Redesign</td>
+                    <td class="py-2">July 10,2025</td>
+                    <td class="py-2"><span class="bg-blue-500 px-2 py-1 rounded text-xs font-semibold">In Progress</span>
+                    </td>
+                </tr>
+                <tr class="border-t border-gray-700">
+                    <td class="py-2">Mobile App</td>
+                    <td class="py-2">August 2,2025</td>
+                    <td class="py-2"><span class="bg-yellow-500 px-2 py-1 rounded text-xs font-semibold">To Do</span>
+                    </td>
+                </tr>
+                <tr class="border-t border-gray-700">
+                    <td class="py-2">API Integration</td>
+                    <td class="py-2">July 30,2025</td>
+                    <td class="py-2"><span class="bg-green-500 px-2 py-1 rounded text-xs font-semibold">Completed</span>
+                    </td>
+                </tr>
+                <tr class="border-t border-gray-700">
+                    <td class="py-2">Client Presentation</td>
+                    <td class="py-2">June 30,2025</td>
+                    <td class="py-2"><span class="bg-red-500 px-2 py-1 rounded text-xs font-semibold">Overdue</span>
+                    </td>
+                </tr>
+                <tr class="border-t border-gray-700">
+                    <td class="py-2">Marketing Campaign</td>
+                    <td class="py-2">September 5,2025</td>
+                    <td class="py-2"><span class="bg-blue-500 px-2 py-1 rounded text-xs font-semibold">In Progress</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+</html>
