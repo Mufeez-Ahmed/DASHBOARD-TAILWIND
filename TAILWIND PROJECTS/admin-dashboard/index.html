@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex">
+      <aside class="w-64 bg-gray-900 text-white min-h-screen">
+        <div class="p-6 text-2xl font-bold border-b border-gray-700">
+          Dashboard
+        </div>
+        <nav class="mt-6 flex flex-col gap-2 px-4">
+          <a
+            href="#"
+            class="flex items-center gap-4 px-4 py-3 rounded hover:bg-gray-800"
+          >
+            <i data-feather="home" class="w-5 h-5"></i>
+            <span>Home</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-4 px-4 py-3 rounded hover:bg-gray-800"
+          >
+            <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+            <span>Analytics</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-4 px-4 py-3 rounded hover:bg-gray-800"
+          >
+             <i data-feather="users" class="w-5 h-5"></i>
+            <span>Users</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-4 px-4 py-3 rounded hover:bg-gray-800"
+          >
+            <i data-feather="settings" class="w-5 h-5"></i>
+            <span>Settings</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center gap-4 px-4 py-3 rounded hover:bg-gray-800"
+          >
+             <i data-feather="mail" class="w-5 h-5"></i>
+            <span>Messages</span>
+          </a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-8">
+        <h1 class="text-3xl font-bold mb-6">Business Insights</h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+          <div class="bg-indigo-600 text-white p-6 rounded-lg">
+            <p class="text-lg">Users</p>
+            <p class="text-2xl font-bold">1,234</p>
+          </div>
+          <div class="bg-green-600 text-white p-6 rounded-lg">
+            <p class="text-lg">Revenue</p>
+            <p class="text-2xl font-bold">$6,540</p>
+          </div>
+          <div class="bg-teal-500 text-white p-6 rounded-lg">
+            <p class="text-lg">Orders</p>
+            <p class="text-2xl font-bold">385</p>
+          </div>
+          <div class="bg-sky-600 text-white p-6 rounded-lg">
+            <p class="text-lg">Visitors</p>
+            <p class="text-2xl font-bold">12,345</p>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h2 class="text-xl font-bold mb-4">Recent Orders</h2>
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b uppercase text-s">
+                <th class="pb-2 pl-4">Order ID</th>
+                <th class="pb-2 pl-2">Customer</th>
+                <th class="pb-2 pr-2">Amount</th>
+                <th class="pb-2">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b hover:bg-gray-100">
+                <td class="py-4 pl-4">#12347</td>
+                <td class="py-4">Travis Head</td>
+                <td class="py-4">$79.99</td>
+                <td class="py-4">
+                  <span
+                    class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full"
+                    >Paid</span
+                  >
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-100">
+                <td class="py-4 pl-4">#14346</td>
+                <td class="py-4">Jimmy Anderson</td>
+                <td class="py-4">$149.99</td>
+                <td class="py-4">
+                  <span
+                    class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full"
+                    >Pending</span
+                  >
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-100">
+                <td class="py-4 pl-4">#24945</td>
+                <td class="py-4">Joe Root</td>
+                <td class="py-4">$249.99</td>
+                <td class="py-4">
+                  <span
+                    class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                    >Paid</span
+                  >
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-100">
+                <td class="py-4 pl-4">#12344</td>
+                <td class="py-4">Steve Smith</td>
+                <td class="py-4">$88.99</td>
+                <td class="py-4">
+                  <span
+                    class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full"
+                    >Cancelled</span
+                  >
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-100">
+                <td class="py-4 pl-4">#14343</td>
+                <td class="py-4">DJ Alok</td>
+                <td class="py-4">$999.99</td>
+                <td class="py-4">
+                  <span
+                    class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full"
+                    >Paid</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="flex justify-between items-center mt-4">
+            <p class="text-sm text-gray-600">Showing 1 to 5 of 50 results</p>
+            <div class="inline-flex items-center gap-1">
+              <button
+                class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm"
+              >
+                &laquo;
+              </button>
+              <button
+                class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm"
+              >
+                1
+              </button>
+              <button
+                class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm"
+              >
+                2
+              </button>
+              <button
+                class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm"
+              >
+                3
+              </button>
+              <button
+                class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 text-sm"
+              >
+                &raquo;
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+  feather.replace()
+</script>
+  </body>
+</html>
